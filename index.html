@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Eldi Prifti" />
+    <title>Dada Sandwich Order Form</title>
+    <link rel="stylesheet" href="styles/site.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Dada Sandwich <em>Lunch-Special</em> Order</h1>
+        <h2>Pick your sandwich, your snack, and your drink!</h2>
+    </header>
+    <main>
+        <form method="post" action="https://cs12.net/form/submit.php">
+            <fieldset>
+                <legend>About your order</legend>
+                <label for="name">Name</label>
+                <input type="text" name="customer_name" id="name" size="35" />
+                <h3>Here or to GO</h3>
+
+                <ul>
+                    <li><input type="radio" name="order_type" id="order_here" value="here" />
+                        <label for="order_here">Here</label>
+                    </li>
+                    <li><input type="radio" name="order_type" id="order_togo" value="togo" />
+                        <label for="order_togo">To GO</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sandwich</legend>
+                <h3>Sandwich Types - Choose One</h3>
+                <ul>
+                    <li><input type="radio" name="sandwich_type" id="chicken_salad" value="chicken_salad" />
+                        <label for="chicken_salad">Chicken Salad</label>
+                    </li>
+                    <li><input type="radio" name="sandwich_type" id="egg_salad" value="egg_salad" />
+                        <label for="egg_salad">Egg Salad</label>
+                    </li>
+                    <li><input type="radio" name="sandwich_type" id="red_pepper" value="red_pepper" />
+                        <label for="red_pepper">Red Pepper Hummus</label>
+                    </li>
+                    <li><input type="radio" name="sandwich_type" id="tomato_mozzarella" value="tomato_mozzarella" />
+                        <label for="tomato_mozzarella">Tomato Mozzarella</label>
+                    </li>
+                    <li><input type="radio" name="sandwich_type" id="roasted_turkey" value="roasted_turkey" />
+                        <label for="roasted_turkey">Roasted Turkey</label>
+                    </li>
+                    <li><input type="radio" name="sandwich_type" id="tuna_salad" value="tuna_salad" />
+                        <label for="tuna_salad">Tuna Salad</label>
+                    </li>
+                </ul>
+
+                <h3>Breads - Choose One</h3>
+                <ul>
+                    <li><input type="radio" name="bread_type" id="7grain" value="7-Grain" />
+                        <label for="7grain">7-Grain</label>
+                    </li>
+                    <li><input type="radio" name="bread_type" id="french" value="french" />
+                        <label for="french">French</label>
+                    </li>
+                    <li><input type="radio" name="bread_type" id="wheat_wrap" value="wheat_wrap" />
+                        <label for="wheat_wrap">Wheat Wrap</label>
+                    </li>
+                    <li><input type="radio" name="bread_type" id="bagel" value="bagel" />
+                        <label for="bagel">Bagel</label>
+                    </li>
+                    <li><input type="radio" name="bread_type" id="gluten_free" value="gluten_free" />
+                        <label for="gluten_free">Gluten Free Bread</label>
+                    </li>
+                </ul>
+
+                <h3>Spreads - Choose all that you like</h3>
+                <ul>
+                    <li><input type="checkbox" name="spread_type" id="mayo" value="mayonnaise" />
+                        <label for="mayo">Mayonnaise</label>
+                    </li>
+                    <li><input type="checkbox" name="spread_type" id="h_mustard" value="honey_mustard" />
+                        <label for="h_mustard">Honey Mustard</label>
+                    </li>
+                    <li><input type="checkbox" name="spread_type" id="pesto" value="pesto" />
+                        <label for="pesto">Pesto</label>
+                    </li>
+                    <li><input type="checkbox" name="spread_type" id="olive" value="olive" />
+                        <label for="olive">Olive</label>
+                    </li>
+                </ul>
+
+                <h3>Cheeses - Choose all that you like</h3>
+                <ul>
+                    <li><input type="checkbox" name="cheese_type" id="feta" value="feta" />
+                        <label for="feta">Feta</label>
+                    </li>
+                    <li><input type="checkbox" name="cheese_type" id="fresh_mozzarella" value="fresh_mozzarella" />
+                        <label for="fresh_mozzarella">Fresh Mozzarella</label>
+                    </li>
+                    <li><input type="checkbox" name="cheese_type" id="swiss" value="swiss" />
+                        <label for="swiss">Swiss</label>
+                    </li>
+                </ul>
+
+                <h3>Fillings - Choose all that you like</h3>
+                <ul>
+                    <li><input type="checkbox" name="filling_type" id="tomato" value="tomato" />
+                        <label for="tomato">Tomato</label>
+                    </li>
+                    <li><input type="checkbox" name="filling_type" id="mix_greens" value="mixed_greens" />
+                        <label for="mix_greens">Mixed Greens</label>
+                    </li>
+                    <li><input type="checkbox" name="filling_type" id="cucumber" value="cucumber" />
+                        <label for="cucumber">Cucumber</label>
+                    </li>
+                    <li><input type="checkbox" name="filling_type" id="red_onion" value="red_onion" />
+                        <label for="red_onion">Red Onion</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Snack</legend>
+                <h3>Choose One</h3>
+                <ul>
+                    <li><label>
+                            <input type="radio" name="snack_type" value="potato_chips" />
+                            Potato Chips</label></li>
+                    <li><label>
+                            <input type="radio" name="snack_type" value="apple" />
+                            Apple</label></li>
+                    <li><label>
+                            <input type="radio" name="snack_type" value="banana" />
+                            Banana</label></li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Drink</legend>
+                <h3>Hot or Iced - Choose One</h3>
+                <ul>
+                    <li><label>
+                            <input type="radio" name="hot_or_iced" value="hot" />Hot</label></li>
+                    <li><label>
+                            <input type="radio" name="hot_or_iced" value="iced" />Iced</label></li>
+                </ul>
+
+                <h3>Drink Size - Choose One</h3>
+                <ul>
+                    <li><label>
+                            <input type="radio" name="drink_size" value="regular" />Regular</label></li>
+                    <li><label>
+                            <input type="radio" name="drink_size" value="Large" />Large</label></li>
+                </ul>
+
+                <h3>Drink Type - Choose One</h3>
+                <ul>
+                    <li><label>
+                            <input type="radio" name="drink_type" value="coffee" />Coffee</label></li>
+                    <li><label>
+                            <input type="radio" name="drink_type" value="sencha_green_tea" />
+                            Sencha Green Tea</label></li>
+                    <li><label>
+                            <input type="radio" name="drink_type" value="keemun_black_tea" />
+                            Keemun Black Tea</label></li>
+                    <li><label>
+                            <input type="radio" name="drink_type" value="organic_peppermint_tea" />
+                            Organic Peppermint Tea</label></li>
+                </ul>
+            </fieldset>
+
+            <!-- Email form setup begin -->
+            <input type="hidden" name="__mailto" value="eldi_prifti@harvard.edu" />
+            <input type="hidden" name="__mailkey" value="cscis12-summer-2021-elp882" />
+            <!-- Email form setup completed -->
+
+            <input type="submit" value="Place Order" id="order_now" />
+        </form>
+    </main>
+</body>
+
+</html>
